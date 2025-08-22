@@ -1,0 +1,98 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 25px;
+    box-shadow: 5px 5px 10px var(--shadow);
+    background-color: var(--primary-color-trs);
+    position: relative;
+    z-index: 1;
+}
+
+.nav-logo{
+    mix-blend-mode: color-burn;
+    height: 30px;
+}
+.nav-profile{
+    width: 35px;
+    height: 35px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navbar-right a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.language{
+    filter: invert(1);
+    height: 30px;
+    cursor: pointer;
+}
+
+.language:hover {
+    transform: scale(1.02);
+}
+
+.language-list-container {
+    position: relative;
+    display: none;
+    z-index: 99;
+}
+
+.language-display {
+    display: block;
+}
+
+@keyframes langConAnim {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100px;
+    }
+}
+
+.language-list {
+    position: absolute;
+    background-color: var(--primary-base-color);
+    filter: drop-shadow(5px 5px 6px var(--shadow));
+    top: 20px;
+    left: -35px;
+    border-radius: 10px;
+    animation: langConAnim 0.4s ease-in-out 0s 1 normal forwards;
+    height: 0px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.language-list p {
+    flex-grow: 1;
+    color: var(--secondary-dark-text-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0;
+}
+
+.language-list-p-align {
+    justify-content: end;
+}
+
+.language-list p:hover {
+    background-color: var(--shadow);
+}

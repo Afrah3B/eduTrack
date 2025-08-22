@@ -1,0 +1,80 @@
+:root {
+  /*base color*/
+  --primary-base-color: #f3f3f3;
+  --secondary-base-color: #f7f7f7;
+  --primary-dark-base-color: #28272c;
+  --secondary-dark-base-color: #5c5c5c;
+  /* main colors*/
+  --primary-color: #3d348b;
+  --secondary-color: #7678ed;
+  --third-color: #f7b801;
+  --forth-color: #f18701;
+  /* main colors trs*/
+  --primary-color-trs: #3d348b99;
+  --secondary-color-trs: #7678ed99;
+  --third-color-trs: #f7b80199;
+  --forth-color-trs: #f1870199;
+  /* text light colors*/
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #f3f3f3;
+  --third-text-color: #f3e9dc;
+  /*text dark colors*/
+  --primary-dark-text-color: #000;
+  --secondary-dark-text-color: #28272c;
+  --third-dark-text-color: #3c3c3c;
+  /*shadow*/
+  --shadow: #00000022;
+  --light-shadow: #f3f3f344;
+  --light-shadow-less: #f3f3f3aa;
+  --primary-color-shadow: #3d348b22;
+  --secondary-color-shadow: #7678ed22;
+  --secondary-color-trs-shadow: #7678ed55;
+  --third-color-shadow: #f7b80122;
+  --forth-color-shadow: #f1870122;
+
+  --yellow-color: #ffe588;
+  --error: #f35b04;
+}
+
+* {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  transition: .4s ease-in-out;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font-family: "Tajawal", sans-serif;
+  background-color: var(--primary-base-color);
+}
+
+a {
+  all: unset;
+  /* Resets all inherited and default styles */
+  display: inline-block;
+  /* Ensures it's still usable as an inline element */
+  text-decoration: none;
+  /* Explicitly remove underline */
+  color: inherit;
+  /* Inherit text color from parent, or set a custom color */
+}
+
+.no-data {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* For Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

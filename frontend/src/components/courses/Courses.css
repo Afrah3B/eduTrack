@@ -1,0 +1,42 @@
+.courses-container {
+    border: 1px solid var(--shadow);
+    border-radius: 10px;
+    box-sizing: border-box;
+    min-height: 500px;
+    padding: 20px;
+}
+
+.courses-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid var(--shadow);
+    border-radius: 10px;
+    padding: 15px;
+    background: #fff;
+}
+
+.course-card h3 {
+    margin-top: 0;
+}
+
+.course-detail {
+    padding: 20px;
+}
+
+.course-link{
+    color: var(--primary-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cat-level{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,88 @@
+.instructor-dashboard {
+    padding: 20px;
+    border: 1px solid var(--shadow);
+    border-radius: 10px;
+    min-height: 600px;
+}
+
+.instructor-dashboard h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.btn-delete {
+    border: 1px solid var(--shadow);
+    background-color: transparent;
+    outline: 0;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-delete:hover {
+    border: 1px solid var(--shadow);
+    background-color: var(--forth-color-shadow);
+    outline: 0;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-add-course {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-add-course:hover {
+    background: var(--primary-color-trs);
+}
+
+.courses-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    border: 1px solid var(--shadow);
+    border-radius: 10px;
+    padding: 15px;
+    background: #fff;
+}
+
+.course-card h3 {
+    margin-top: 0;
+}
+
+.actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.actions a {
+    cursor: pointer;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.btn-edit {
+    background: var(--secondary-color);
+}
+
+.btn-lessons {
+    background: var(--third-color-trs);
+}
+.btn-edit:hover {
+    background: var(--secondary-color-trs);
+}
+
+.btn-lessons:hover {
+    background: var(--third-color);
+}

@@ -1,0 +1,6 @@
+{
+    "EMAIL": "mailto:afrahbawhab@gmail.com",
+    "WHATSUP": "https://wa.me/+966",
+    "BASE_API": "http://localhost:5000/api/",
+    "UPLOAD_API": "http://localhost:5000/"
+}
